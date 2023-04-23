@@ -1,0 +1,5 @@
+when a save to, RESTORE, or RETT instruction executes, the current value of
+the CWP is compared against the WIM. If the SAVE, RESTORE, or RETT
+instruction would cause the CWP to point to an “invalid” register set, that is, one
+whose corresponding WIM bit equals 1 (WIM[CWP] = 1), a window_overflow
+or window_underflow trap is caused
